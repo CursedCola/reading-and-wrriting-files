@@ -17,13 +17,17 @@
 # employee_file.write("\nKelly- Customer Service")
 # employee_file.close()
 
-with open('readme.txt','w') as f:
-  f.write('readme')
+# with open('readme.txt','w') as f:
+#   f.write('readme')
 
-# this overwrites the original content
-with open('readme.txt','w') as f:
-  f.write('I dont care')
+# # this overwrites the original content
+# with open('readme.txt','w') as f:
+#   f.write('I dont care')
 
-# this appends to the original content
-with open('readme.txt','a') as f:
-  f.write('I dont care I dont care I dont care I dont care')
+# # this appends to the original content
+# with open('readme.txt','a') as f:
+#   f.write('I dont care I dont care I dont care I dont care')
+
+user = input("Say something: ")
+with open('userinput.txt',"a") as f:
+  f.write(user)
